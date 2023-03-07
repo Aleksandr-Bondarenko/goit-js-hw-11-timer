@@ -29,13 +29,13 @@ class CountdownTimer {
     const timerEl = document.querySelector(this.selector);
     timerEl.insertAdjacentHTML(
       "beforebegin",
-      "<h1 class=timer-title lang = ru>До конца лета осталось:</h1>"
+      "<h1 class=timer-title lang = ru>До початку літа залишилось:</h1>"
     );
 
     setInterval(this.timer.bind(this), 1000);
   }
 }
 
-const createTimer = new CountdownTimer("#timer-1", new Date("Sep 01, 2021"));
+const createTimer = new CountdownTimer("#timer-1", new Date("Jun 01, 2023"));
 
 createTimer.runTimer();
